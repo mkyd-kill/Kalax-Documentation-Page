@@ -5,6 +5,7 @@ body {
   background-color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -82,6 +83,13 @@ header {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: inherit;
+}
+
+.main-section a:hover {
+  color: darkred !important;
 }
 
 #main-doc {
@@ -104,15 +112,11 @@ section li {
 code {
   display: block;
   text-align: left;
-  white-space: pre;
-  position: relative;
   word-break: normal;
   word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
+  background-color: bisque;
+  padding-top: 1pt;
+  padding-bottom: 1pt;
 }
 
 @media only screen and (max-width: 815px) {
@@ -145,14 +149,5 @@ code {
 @media only screen and (max-width: 400px) {
   #main-doc {
     margin-left: -10px;
-  }
-
-  code {
-    margin-left: -20px;
-    width: 100%;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
   }
 }

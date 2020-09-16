@@ -89,7 +89,8 @@ header {
 }
 
 .main-section a:hover {
-  color: darkred !important;
+  color: rgb(49, 0, 139) !important;
+  background-color: greenyellow;
 }
 
 #main-doc {
@@ -112,6 +113,8 @@ section li {
 code {
   display: block;
   text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
   word-break: normal;
   word-wrap: normal;
   background-color: bisque;

@@ -22,21 +22,6 @@ body {
   background-color: cadetblue;
 }
 
-.alert {
-  background-color: aquamarine;
-  color: darkgreen;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.close {
-  border-width: 2pt !important;
-  background-color: darkslategrey !important;
-}
-
-.close:hover {
-  color: red !important;
-}
-
 header {
   color: black;
   margin: 10px;

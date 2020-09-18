@@ -22,27 +22,19 @@ body {
   background-color: cadetblue;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
+.alert {
+  background-color: aquamarine;
+  color: darkgreen;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-#img-div {
-  background: white;
-  padding: 10px;
-  margin: 0;
+.close {
+  border-width: 2pt !important;
+  background-color: darkslategrey !important;
 }
 
-#img-caption {
-  margin: 15px 0 5px 0;
-}
-
-@media (max-width: 460px) {
-  #img-caption {
-    font-size: 1.4rem;
-  }
+.close:hover {
+  color: red !important;
 }
 
 header {
@@ -126,6 +118,8 @@ code {
   background-color: bisque;
   padding-top: 0.5pt;
   padding-bottom: 1pt;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
 }
 
 @media only screen and (max-width: 815px) {
@@ -146,6 +140,7 @@ code {
     border: none;
     z-index: 1;
     border-bottom: 2px solid;
+    background-color: cadetblue;
   }
 
   #main-doc {

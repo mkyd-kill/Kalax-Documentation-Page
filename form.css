@@ -32,9 +32,13 @@
     background: var(--color-darkblue);
     background-image: linear-gradient(
         115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
+        rgba(58, 58, 158, 0.7),
+        rgba(136, 136, 206, 0.6)
       ),
+    url(Images/images.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
   }
       p {
         font-size: 1.125rem;
@@ -97,8 +101,7 @@
         text-align: center;
       }
       
-      /* form */
-      
+      /* form */ 
       form {
         background: var(--color-darkblue-alpha);
         padding: 2.5rem 0.625rem;
@@ -109,6 +112,10 @@
         form {
           padding: 2.5rem;
         }
+      }
+
+      .form-control {
+        font-family: monospace;
       }
       
       .form-group {
@@ -130,4 +137,17 @@
         color: inherit;
         border-radius: 2px;
         cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      button:hover {
+        animation-name: background-color;
+        color: #1b1b32;
+        animation-duration: 800ms;
+      }
+
+      @keyframes background-color {
+        100% {
+          background-color: dimgray;
+        }
       }

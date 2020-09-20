@@ -2,8 +2,6 @@
 
 const { url } = require("inspector");
 
-const projectName = 'kalax-training-center';
-
 $('#contact-form').submit(function(e) {
     var name = document.getElementById('name'),
         email = document.getElementById('email'),
@@ -14,14 +12,27 @@ $('#contact-form').submit(function(e) {
         alertify.error('Please check your entries')
     }
     else {
-        $.ajax({
-            url: "https://formspree.io/romeomureithi@gmail.com",
-            method: "POST",
-            data: $('#contact-form').serialize(),
-            datatype: "json"
-        });
-        e.preventDefault()
-        $(this).get(0).reset()
-        alertify.success('Message Sent')
+        // email validation
+    function validate(){
+        var email = document.getElementById('email').value;
+
+        var regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9\.-]+).([a-z]{2, 8})(.[a-z]{2, 8})$/;
+            if (regx.test(email)){
+                $.ajax({
+                    url: "https://formspree.io/romeomureithi@gmail.com",
+                    method: "POST",
+                    data: $('#contact-form').serialize(),
+                    datatype: "json"
+                });
+                e.preventDefault()
+                $(this).get(0).reset()
+                alertify.success('Message Sent')
+            }
+            else {
+                document.getElementById('emailtext').innerHTML="Invalid Email";
+                document.getElementById('emailtext').style.visibility="visible";
+                document.getElementById('emailtext').style.color="red";
+            }
+    }
     }
 })

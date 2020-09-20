@@ -55,6 +55,14 @@
         font-size: 1.125rem;
         margin-bottom: 0.5rem;
       }
+
+      #emailtext {
+        color: red;
+        visibility: hidden;
+        margin-top: 0%;
+        margin-bottom: 0.3%;
+        font-size: smaller;
+      }
       
       input,
       button,
